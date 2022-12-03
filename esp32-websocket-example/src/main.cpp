@@ -4,15 +4,14 @@
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
 *********/
-
+#define ASYNC_TCP_SSL_ENABLED true
 // Import required libraries
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-
 // Replace with your network credentials
-const char *ssid = "WLAN16815377";
-const char *password = "hjrPWuatkcx7";
+const char *ssid = "DESKTOP-H29541I 1370";
+const char *password = "787Pt7!7";
 
 bool ledState = 0;
 const int ledPin = 2;

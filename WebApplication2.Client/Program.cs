@@ -10,12 +10,13 @@ namespace WebApplication2.Client
     {
         static async Task Main(string[] args)
         {
-            //Console.WriteLine("press enter to continue");
-            //Console.ReadLine();
+            Console.WriteLine("press enter to continue");
+            Console.ReadLine();
 
             using (ClientWebSocket client = new ClientWebSocket())
             {
-                Uri serviceUri = new Uri("ws://192.168.0.38/ws");
+                //Uri serviceUri = new Uri("wss://192.168.0.206:44309/send");
+                Uri serviceUri = new Uri("ws://192.168.0.206:15911/send");
                 var cTs = new CancellationTokenSource(); // cancellation token source
                 cTs.CancelAfter(TimeSpan.FromSeconds(120));
                 try
